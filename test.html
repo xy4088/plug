@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link type="text/css" rel="stylesheet" href="plug.css">
 </head>
 <body>
 
 <div id="wininfo" hidden>46465456</div>
-<div id="pop"></div>
+<div id="wininfo1" hidden>sdfffffffffffffffff<button onclick="winHide()">关闭弹窗</button></div>
+<div id="wininfo2" hidden>sddfdf232323232</div>
+<div id="wininfo3" hidden>464654sdfdfdfdf56</div>
+<!--<div id="pop">-->
+    <!--<div id="pop-main">-->
+        <!--<div class="pop-content">-->
+            <!--<i id="closeWin"></i>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 <script type="text/javascript" src="Plug.js"></script>
 <script>
-//    P.pop.CreatePop({
-//        popId: 'pop',
-//        xmlId: 'wininfo',
-//        style: {
-//            width: 400,
-//            height: 400
-//        },
-//        winbg: true
-//    });
+    P.CreatePop({
+        popId: 'pop',
+        xml: P.$("wininfo1"),
+        style: {
+            width: '600px',
+            height: '500px'
+        },
+        winBg: 'rgba(0, 0, 0, 0.541176)',
+        fullScreen: false, //是否全屏
+        closeWin: true,
+        closeCallback: function(){}  //点叉关闭弹窗的回调;
+    });
+
+    function winHide(){
+        P.pop.hide();
+    }
     console.log(P);
 </script>
 </body>
