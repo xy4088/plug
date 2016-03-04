@@ -3,7 +3,7 @@
  *  Mr. Hu
  */
 
-(function(window,document){
+;!(function(window,document){
 
     var window = window,
         document = document;
@@ -19,7 +19,7 @@
             return obj1;
         }
     };
-    var Pop = function (o){
+    var Pop = function (){
         this.config = {
             popId: 'pop',
             xml: '',
@@ -32,10 +32,10 @@
             closeWin: true, //设置是否有弹窗的关闭按钮，默认是有的;
             closeCallback: function(){}  //点叉关闭弹窗的回调;
         };
-        this.config = Plug.extend(o,this.config);
         this.node = null;
     };
-    Pop.prototype.init = function() {
+    Pop.prototype.init = function(conf) {
+        this.config = Plug.extend(conf,this.config);
         var _this = this;
         var config = this.config;
         var $ = Plug.$;
@@ -94,18 +94,15 @@
         }
     };
     Pop.prototype.hide = function() {
-        console.log(2);
         this.node.style.display = "none";
     };
     Pop.prototype.show = function(){
-        console.log(1);
         this.node.style.display = "block";
     };
-    //调用窗口入口;
-    Plug.CreatePop = function(config) {
-        Plug.pop = new Pop(config);
-        Plug.pop.init();
-    };
+
+    //窗口实例;
+    Plug.pop = new Pop();
+
     window.P = Plug;
 
 })(window,document);
