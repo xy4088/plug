@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* s*/
+/* e*/
+
+body {
+    color: #363636;
+    line-height: 1.2;
+    font:12px "微软雅黑";
+    background: ;}
+body, input, select, button, textarea {
+    font:12px "微软雅黑";}
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td {
+    margin: 0;
+    padding: 0;}
+img {
+    border: 0 none;
+    vertical-align: top;}
+ul, li {
+    list-style-type: none;}
+li{
+    font-size:13px;}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 14px;}
+button {
+    cursor: pointer;}
+i, em, cite {
+    font-style: normal;}
+/*链接样式*/
+a, a:link {
+    color: #222;
+    text-decoration: none;}
+a:visited {}
+a:hover , a:active{
+    color: #ff6600;}
+a:focus {
+    outline: none;}
+/* 颜色属性 [定义规则，小写c加颜色名称] */
+.cRed,a.cRed:link,a.cRed:visited { color:Red; } /*红色*/
+/*清楚浮动 begin*/
+.fixed:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;}
+.fixed {
+    display: block;
+    min-height: 1%;}
+*html .fixed {
+    height: 1%;}
+.clear {
+    diplay: block!important;
+    float: none!important;
+    clear: both;
+    overflow: hidden;
+    width: auto!important;
+    height: 0!important;
+    margin: 0 auto!important;
+    padding: 0!important;
+    font-size: 0;
+    line-height: 0;}/*清楚浮动 end*/
+.more {
+    font-size:12px;
+    float: right;}
+.more a {
+    font-weight: normal;
+    font-size: 12px;}
+/*左右浮动*/
+.fl{
+    float: left;}
+.fr {
+    float: right;}
+.Gleft{ float:left !important;}
+.Gright{ float:right !important;}
+/*字体大小*/
+.f12 {font-size:12px;}
+.f14 {font-size:14px;}
+/*层隐藏*/
+.hidden {display:none;}
+.marginright{
+    margin-right:0 !important;}
+.ofh{ overflow:hidden;}
+.mb10{ margin-bottom:10px;}
+.mb15{ margin-bottom:15px;}
+.mb20{ margin-bottom:20px;}
+.mt10{ margin-top:10px;}
+.mt15{ margin-top:15px;}
+.mt20{ margin-top:20px;}
+
+
+
+
+.search_top #uc_top_index1_btnsearch {
+    background: url("../images/search_btn.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    position: absolute;
+    right: 3px;
+    top: 0;
+    width: 68px;
+}
