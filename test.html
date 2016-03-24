@@ -21,18 +21,18 @@
 <script type="text/javascript" src="Plug.js"></script>
 <script>
     P.pop.init({
-        popId: 'pop',
-        xml: P.$("wininfo1"),
-        style: {
+        xml: P.$("wininfo2"), //must,弹窗内容指定的容器; 插件要做的事，是把ID=wininfo1的div里面的内容放在弹窗口里面;
+        style: {  //option; 弹窗内容区域大小;默认width=400,height=400;
             width: '600px',
             height: '500px'
         },
-        winBg: 'rgba(0, 0, 0, 0.541176)',
-        fullScreen: false, //是否全屏
-        closeWin: true,
-        closeCallback: function(){}  //点叉关闭弹窗的回调;
+        winBg: 'rgba(0, 0, 0, 0.6)',  //option; 弹窗半透明; 默认为rgba(0, 0, 0, 0.6);
+        fullScreen: false, //option 是否全屏; 默认为false;
+        closeWin: true,  //option ;是否显示右上角的叉,默认为true
+        closeCallback: function(){}  //option,点叉关闭弹窗的回调;
     });
-    console.log(P);
+
+    P.pop.init({xml: P.$("wininfo2")});
 </script>
 </body>
 </html>

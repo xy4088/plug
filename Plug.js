@@ -27,7 +27,7 @@
                 width: 400,
                 height: 400
             },
-            winBg: 'rgba(0, 0, 0, 0.541176)',  //背景颜色,默认是有半透明的; false表示没有颜色;
+            winBg: 'rgba(0, 0, 0, 0.6)',  //背景颜色,默认是有半透明的; false表示没有颜色;
             fullScreen: false, //是否全屏;
             closeWin: true, //设置是否有弹窗的关闭按钮，默认是有的;
             closeCallback: function(){}  //点叉关闭弹窗的回调;
