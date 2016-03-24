@@ -21,6 +21,7 @@
 <script type="text/javascript" src="Plug.js"></script>
 <script>
     P.pop.init({
+        popId: 'pop',
         xml: P.$("wininfo2"), //must,弹窗内容指定的容器; 插件要做的事，是把ID=wininfo1的div里面的内容放在弹窗口里面;
         style: {  //option; 弹窗内容区域大小;默认width=400,height=400;
             width: '600px',
@@ -32,7 +33,7 @@
         closeCallback: function(){}  //option,点叉关闭弹窗的回调;
     });
 
-    P.pop.init({xml: P.$("wininfo2")});
+//    P.pop.init({xml: P.$("wininfo2")});
 </script>
 </body>
 </html>
