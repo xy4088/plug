@@ -47,7 +47,8 @@
         }else {
             boxNode = document.createElement('div');
             boxNode.id = "pop";
-            document.body.appendChild(boxNode);
+            var first=document.body.firstChild;//得到页面的第一个元素 ;
+            document.body.insertBefore(boxNode,first);//在得到的第一个元素之前插入 ;
         }
 
         //内容区;
